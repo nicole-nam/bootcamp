@@ -13,23 +13,59 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (min-width: 75em) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
   font-weight: 300;
   position: relative;
   min-height: 100vh;
+  margin: auto;
+  padding: 3rem;
   background-image: url("../images/pattern-curve.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
 }
 
+@media only screen and (min-width: 75em) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  body {
+    width: 1440px;
+  }
+}
+
 .carousel {
   display: none;
 }
 
-/* Fading animation */
+@media only screen and (min-width: 75em) {
+  .carousel {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -39,7 +75,7 @@ body {
 
 @-webkit-keyframes fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
@@ -48,7 +84,7 @@ body {
 
 @keyframes fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
@@ -59,6 +95,13 @@ body {
   font-size: 1.7rem;
   font-weight: 300;
   margin: 3rem 0;
+}
+
+@media only screen and (min-width: 75em) {
+  .heading-1 {
+    font-size: 2.5rem;
+    width: 115%;
+  }
 }
 
 .description {
@@ -78,6 +121,14 @@ body {
   font-weight: inherit;
 }
 
+@media only screen and (min-width: 75em) {
+  .header {
+    padding: 3rem 7rem;
+    background-position: 90%;
+    background-size: 50%;
+  }
+}
+
 .header__picture {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,9 +142,15 @@ body {
           justify-content: center;
 }
 
+@media only screen and (min-width: 75em) {
+  .header__picture {
+    grid-column: 2/ -1;
+  }
+}
+
 .header__img {
-  width: 80%;
-  margin: 3rem auto;
+  width: 90%;
+  margin: 1rem auto;
   margin-bottom: 0;
   border-radius: 0.5rem;
   -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.4);
@@ -127,6 +184,28 @@ body {
   position: relative;
 }
 
+@media only screen and (min-width: 75em) {
+  .header__content {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/ 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+  }
+}
+
 .header__content::before {
   content: "";
   display: inline-block;
@@ -139,5 +218,14 @@ body {
   position: absolute;
   top: 2%;
   right: 0;
+}
+
+@media only screen and (min-width: 75em) {
+  .flexbox-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

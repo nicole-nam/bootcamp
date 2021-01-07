@@ -11,15 +11,26 @@
   padding: 3rem;
   font-weight: inherit;
 
+  @media only screen and (min-width: $bp-large) {
+    padding: 3rem 7rem;
+
+    background-position: 90%;
+    background-size: 50%;
+  }
+
   &__picture {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media only screen and (min-width: $bp-large) {
+      grid-column: 2/ -1;
+    }
   }
 
   &__img {
-    width: 80%;
-    margin: 3rem auto;
+    width: 90%;
+    margin: 1rem auto;
     margin-bottom: 0;
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 2rem (rgba(#000, 0.4));
@@ -49,6 +60,17 @@
     text-align: center;
     position: relative;
 
+    @media only screen and (min-width: $bp-large) {
+      grid-column: 1/ 2;
+      grid-row: 1/2;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      text-align: left;
+    }
+
     &::before {
       content: "";
       display: inline-block;
@@ -64,5 +86,12 @@
       top: 2%;
       right: 0;
     }
+  }
+}
+
+.flexbox-detail {
+  @media only screen and (min-width: $bp-large) {
+    display: flex;
+    gap: 1rem;
   }
 }
