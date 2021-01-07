@@ -8,6 +8,9 @@
 
   display: grid;
 
+  padding: 3rem;
+  font-weight: inherit;
+
   &__picture {
     display: flex;
     flex-direction: column;
@@ -18,7 +21,7 @@
     width: 80%;
     margin: 3rem auto;
     margin-bottom: 0;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     box-shadow: 0 0.5rem 2rem (rgba(#000, 0.4));
   }
 
@@ -36,6 +39,10 @@
 
     display: flex;
     gap: 3rem;
+
+    &-icon {
+      cursor: pointer;
+    }
   }
 
   &__content {

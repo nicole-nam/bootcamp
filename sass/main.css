@@ -25,9 +25,34 @@ body {
   background-position: bottom;
 }
 
-.container {
-  padding: 3rem 3rem 0;
-  font-weight: inherit;
+.carousel {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .heading-1 {
@@ -49,6 +74,8 @@ body {
   background-repeat: no-repeat;
   display: -ms-grid;
   display: grid;
+  padding: 3rem;
+  font-weight: inherit;
 }
 
 .header__picture {
@@ -68,7 +95,7 @@ body {
   width: 80%;
   margin: 3rem auto;
   margin-bottom: 0;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.4);
 }
@@ -89,6 +116,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 3rem;
+}
+
+.header__btn-icon {
+  cursor: pointer;
 }
 
 .header__content {

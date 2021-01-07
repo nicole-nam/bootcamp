@@ -18,9 +18,10 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <div class="container">
-      <header class="header">
+    <header class="header">
+      <div class="carousel fade">
         <div class="header__picture">
           <img
             src="./images/image-tanya.jpg"
@@ -28,8 +29,18 @@
             class="header__img"
           />
           <button class="header__btn">
-            <img src="./images/icon-prev.svg" alt="previous" class="btn-icon" />
-            <img src="./images/icon-next.svg" alt="next" class="btn-icon" />
+            <img
+              onclick="plusSlides(-1)"
+              src="./images/icon-prev.svg"
+              alt="previous"
+              class="header__btn-icon"
+            />
+            <img
+              onclick="plusSlides(1)"
+              src="./images/icon-next.svg"
+              alt="next"
+              class="header__btn-icon"
+            />
           </button>
         </div>
 
@@ -42,16 +53,43 @@
           <h2 class="heading-2">Tanya Sinclair</h2>
           <p class="description">UX Engineer</p>
         </div>
-      </header>
-    </div>
+      </div>
 
-    <!-- 
-“ If
-    you want to lay the best foundation possible I’d recommend taking this
-    course. The depth the instructors go into is incredible. I now feel so
-    confident about starting up as a professional developer. ” John Tarkpor
-    Junior Front-end Developer -->
+      <div class="carousel fade">
+        <div class="header__picture">
+          <img
+            src="./images/image-john.jpg"
+            alt="student 1"
+            class="header__img"
+          />
+          <button class="header__btn">
+            <img
+              onclick="plusSlides(-1)"
+              src="./images/icon-prev.svg"
+              alt="previous"
+              class="header__btn-icon"
+            />
+            <img
+              onclick="plusSlides(1)"
+              src="./images/icon-next.svg"
+              alt="next"
+              class="header__btn-icon"
+            />
+          </button>
+        </div>
 
+        <div class="header__content">
+          <h1 class="heading-1">
+            “ If you want to lay the best foundation possible I'd recommend
+            taking this course. The depth the instructors go into is incredible.
+            I now feel so confident about starting up as a professional
+            developer”
+          </h1>
+          <h2 class="heading-2">John Takpor</h2>
+          <p class="description">Junior Front-end Developer</p>
+        </div>
+      </div>
+    </header>
     <script src="./js/index.js"></script>
   </body>
 </html>
