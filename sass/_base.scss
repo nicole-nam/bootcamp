@@ -19,9 +19,19 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
   font-weight: 300;
+  position: relative;
+
+  min-height: 100vh;
+
+  background-image: url("../images/pattern-curve.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  
 }
 
 .container {
-  padding: 3rem;
+  padding: 3rem 3rem 0;
   font-weight: inherit;
+
 }
