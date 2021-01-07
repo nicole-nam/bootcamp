@@ -1,0 +1,27 @@
+//colors
+$color-dark-blue: hsl(240, 38%, 20%);
+$color-grey-blue: hsl(240, 18%, 77%);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //10px
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.container {
+  padding: 3rem;
+  font-weight: inherit;
+}
