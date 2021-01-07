@@ -175,6 +175,10 @@ body {
   gap: 3rem;
 }
 
+.header__btn:active {
+  outline: none;
+}
+
 @media only screen and (min-width: 75em) {
   .header__btn {
     -ms-flex-item-align: start;
