@@ -175,6 +175,14 @@ body {
   gap: 3rem;
 }
 
+@media only screen and (min-width: 75em) {
+  .header__btn {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 5rem;
+  }
+}
+
 .header__btn-icon {
   cursor: pointer;
 }

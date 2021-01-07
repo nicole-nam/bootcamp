@@ -51,6 +51,11 @@
     display: flex;
     gap: 3rem;
 
+    @media only screen and (min-width: $bp-large) {
+      align-self: flex-start;
+      margin-left: 5rem;
+    }
+
     &-icon {
       cursor: pointer;
     }
